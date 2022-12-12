@@ -1,0 +1,79 @@
+
+
+body {
+    background-color:beige;
+    
+    
+}
+
+
+
+#scree{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+    
+}
+
+
+.screen {
+    background: transparent;
+    width: 60vw;
+    height: 2.4vw;
+    margin-left: 19vw;
+    margin-top:3vw;
+    font-family: 'Orbitron', sans-serif;
+    border: 3px solid darkblue;
+    border-radius: 3px;
+    font-size: 2vw;
+    color: darkblue;
+}
+
+.butt{
+    text-align: center;
+    
+}
+
+
+
+.buttons {
+   
+    background-color:rebeccapurple;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 3vw;
+    width: 10vw;
+    height: 10vw;
+}
+
+#reset {
+    text-align:center;
+    background-color: rebeccapurple;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 2vw;
+    width: 10vw;
+    height: 6vw;
+}
+
+
+
+@media all and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
