@@ -147,7 +147,9 @@ for (let h = 1; h < 10; h++) {
             }
         }
         clickedOnce[h] = true;
-        evaluator();
+        if (clickCount > 4) {
+            evaluator();
+        }
         {
 }
     }
