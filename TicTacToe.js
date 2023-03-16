@@ -54,8 +54,15 @@ function resetGame() {
     screen.innerText = "Player X starts first.";
 }
 
+function declareWinner(symb) {
+    isWinner = true;
+    winner = symb;
+    screen.innerText = "The Winner is " + winner + "! Reset to give it another shot.";
+    alert("The winner is player " + winner + "! Congratulations.");
+}
 
-//The following method is called everytime each tile is pressed to evaluate and declare the winner.
+
+//The following method is called everytime each tile is pressed after 4 tile clicks to evaluate and declare the winner.
 function evaluator() {
     let sym = " ";
     
@@ -67,59 +74,35 @@ function evaluator() {
             sym = symbolB;
         }
         if (symbol[1] == sym && symbol[2] == sym && symbol[3] == sym) {
-            isWinner = true;
-            winner = sym;
-            screen.innerText = "The Winner is " + winner + "! Reset to give it another shot.";
-            alert("The winner is player " + winner + "! Congratulations.");
+            declareWinner(sym);
             break;
         }
         else if (symbol[4] == sym && symbol[5] == sym && symbol[6] == sym) {
-            isWinner = true;
-            winner = sym;
-            screen.innerText = "The Winner is " + winner + "! Reset to give it another shot.";
-            alert("The winner is player " + winner + "! Congratulations.");
+            declareWinner(sym);
             break;
         }
         else if (symbol[7] == sym && symbol[8] == sym && symbol[9] == sym) {
-            isWinner = true;
-            winner = sym;
-            screen.innerText = "The Winner is " + winner + "! Reset to give it another shot.";
-            alert("The winner is player " + winner + "! Congratulations.");
+            declareWinner(sym);
             break;
         }
         else if (symbol[1] == sym && symbol[4] == sym && symbol[7] == sym) {
-            isWinner = true;
-            winner = sym;
-            screen.innerText = "The Winner is " + winner + "! Reset to give it another shot.";
-            alert("The winner is player " + winner + "! Congratulations.");
+            declareWinner(sym);
             break;
         }
         else if (symbol[2] == sym && symbol[5] == sym && symbol[8] == sym) {
-            isWinner = true;
-            winner = sym;
-            screen.innerText = "The Winner is " + winner + "! Reset to give it another shot.";
-            alert("The winner is player " + winner + "! Congratulations.");
+            declareWinner(sym);
             break;
         }
         else if (symbol[3] == sym && symbol[6] == sym && symbol[9] == sym) {
-            isWinner = true;
-            winner = sym;
-            screen.innerText = "The Winner is " + winner + "! Reset to give it another shot.";
-            alert("The winner is player " + winner + "! Congratulations.");
+            declareWinner(sym);
             break;
         }
         else if (symbol[1] == sym && symbol[5] == sym && symbol[9] == sym) {
-            isWinner = true;
-            winner = sym;
-            screen.innerText = "The Winner is " + winner + "! Reset to give it another shot.";
-            alert("The winner is player " + winner + "! Congratulations.");
+            declareWinner(sym);
             break;
         }
         else if (symbol[3] == sym && symbol[5] == sym && symbol[7] == sym) {
-            isWinner = true;
-            winner = sym;
-            screen.innerText = "The Winner is " + winner + "! Reset to give it another shot.";
-            alert("The winner is player " + winner + "! Congratulations.");
+            declareWinner(sym);
             break;
         }
         if (clickCount == 9 && isWinner == false) {
@@ -150,8 +133,5 @@ for (let h = 1; h < 10; h++) {
         if (clickCount > 4) {
             evaluator();
         }
-        {
-}
     }
-
 }
